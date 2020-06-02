@@ -18,10 +18,9 @@
     "typescript": "^3.9.3"
   },
   "scripts": {
-    "dev:watch": "tsc --watch",
-    "dev:reload": "nodemon build/bot.js",
-    "dev": "npm-run-all --parallel dev:watch dev:reload",
-    "build": "tsc",
+    "dev": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "yarn build && node build/bot.js",
     "clean": "rimraf build"
   }
 }
