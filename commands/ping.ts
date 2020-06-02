@@ -1,17 +1,15 @@
-import { MessageOptions } from 'discord.js'
-
-const { Command } = require('discord-akairo')
+import { Command } from 'discord-akairo'
 
 class PingCommand extends Command {
-    constructor() {
-        super('ping', {
-            aliases: ['ping'],
-        })
-    }
+  constructor() {
+    super('ping', {
+      aliases: ['ping']
+    })
+  }
 
-    exec(message: any) {
-        return message.reply('Pong')
-    }
+  exec(message: any) {
+    return message.reply('Pong!')
+  }
 }
 
-module.exports = PingCommand
+export default PingCommand

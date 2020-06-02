@@ -14,12 +14,12 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
     "prettier-config-standard": "^1.0.1",
+    "ts-node": "^8.10.2",
     "typescript": "^3.9.3"
   },
   "scripts": {
     "dev:watch": "tsc --watch",
     "dev:reload": "nodemon build/bot.js",
-    "dev:env": "node -r dotenv/config build/bot.js",
     "dev": "npm-run-all --parallel dev:watch dev:reload",
     "build": "tsc",
     "clean": "rimraf build"
