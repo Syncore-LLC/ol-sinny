@@ -9,7 +9,7 @@ class PingCommand extends Command {
         })
     }
 
-    exec(message: MessageOptions) {
+    exec(message: any) {
         return message.reply('Pong')
     }
 }

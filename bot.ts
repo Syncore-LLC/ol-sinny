@@ -1,16 +1,17 @@
-const { AkairoClient, CommandHandler } = require('discord-akairo')
+const { AkairoClient } = require('discord-akairo')
 
-class Client extends AkairoClient {
-    constructor() {
-        super({
-            ownerID: "'227540474951368704'",
-        })
-
-        this.commandHandler = new CommandHandler(this, {
-            directory: './commands/',
-            prefix: '!',
-        })
-
-        this.commandHandler.loadAll()
-    }
+class MyClient extends AkairoClient {
+  constructor() {
+    super(
+      {
+        // Options for Akairo go here.
+      },
+      {
+        // Options for discord.js goes here.
+      }
+    )
+  }
 }
+
+const client = new MyClient()
+client.login('TOKEN')
