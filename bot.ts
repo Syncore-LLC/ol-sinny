@@ -6,7 +6,13 @@ class SyncoreBot extends AkairoClient {
     super(
       { ownerID: '717195375731015732' },
       {
-        disableMentions: 'everyone'
+        disableMentions: 'everyone',
+        presence: {
+          status: 'online',
+          activity: {
+            name: 'Visit https://syn-core.com'
+          }
+        }
       }
     )
 
