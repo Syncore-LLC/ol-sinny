@@ -21,7 +21,7 @@
   "scripts": {
     "dev": "nodemon",
     "build": "rimraf ./build && tsc",
-    "start": "yarn build && node build/bot.js",
+    "start": "node build/bot.js",
     "clean": "rimraf build"
   }
 }
