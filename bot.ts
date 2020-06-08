@@ -1,17 +1,26 @@
 import 'dotenv/config'
-import { AkairoClient, CommandHandler } from 'discord-akairo'
+import { AkairoClient, ListenerHandler } from 'discord-akairo'
 
 class SyncoreBot extends AkairoClient {
   constructor() {
-    super({ ownerID: '717195375731015732' })
+                  super(
+                    { ownerID: '717195375731015732' },
+                    {
+                      disableMentions: 'everyone'
+                    }
+                  )
 
-    // this.commandHandler = new CommandHandler(this, {
-    //   directory: './commands/',
-    //   prefix: '!'
-    // })
+                  // @ts-ignore
+                  this.listenerHandler = new ListenerHandler(this, {
+                    directory: './listeners/'
+                  })
 
-    // this.commandHandler.loadAll()
-  }
+                  // @ts-ignore
+
+                  this.listenerHandler.loadAll()
+                }
+
+
 }
 
 const bot = new SyncoreBot()
