@@ -4,13 +4,13 @@
   "main": "bot.ts",
   "license": "MIT",
   "dependencies": {
+    "@types/node": "^14.0.11",
     "discord-akairo": "^8.0.0",
     "discord.js": "^12.2.0",
     "dotenv": "^8.2.0",
     "ts-node": "^8.10.2"
   },
   "devDependencies": {
-    "@types/node": "^14.0.9",
     "nodemon": "^2.0.4",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
