@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import { AkairoClient, ListenerHandler } from 'discord-akairo'
 
 class SyncoreBot extends AkairoClient {
