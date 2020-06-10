@@ -1,6 +1,6 @@
 import { GuildMember } from 'discord.js'
 
-const { Listener } = require('discord-akairo')
+import { Listener } from 'discord-akairo'
 
 import config from '../config'
 
